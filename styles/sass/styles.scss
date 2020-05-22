@@ -1,0 +1,11 @@
+@import "partials/setup";
+@import "partials/palette";
+@import "partials/general";
+@import "partials/navs";
+
+
+.wrapper {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}

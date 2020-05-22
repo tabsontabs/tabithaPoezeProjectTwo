@@ -1,0 +1,14 @@
+$primaryTitleColor: #FFC600;
+$buttonColor: #555F02;
+$backgroundOne: #1E140E;
+$backgroundTwo: #262725;
+$paragraphColor: #FAFFFE;
+
+$mainFont: 'Dokdo', cursive;
+$secondaryFont: 'Lato', sans-serif;
+
+@mixin font($size, $lh, $ls) {
+    font-size: $size;
+    line-height: $lh;
+    letter-spacing: $ls;
+}

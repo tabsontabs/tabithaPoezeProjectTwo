@@ -1,0 +1,25 @@
+@import "palette";
+
+nav {
+    background-color: black;
+    height: 50vh;
+}
+
+li a {
+    color: $paragraphColor;
+    font-family: $secondaryFont;
+    @include font(20px, 29px, 1px);
+}
+
+.logo {
+    color: $primaryTitleColor;
+    font-family: $mainFont;
+    font-size: 41.5px;
+}
+
+.navFlex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
