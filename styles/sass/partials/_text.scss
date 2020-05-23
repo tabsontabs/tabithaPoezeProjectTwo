@@ -1,0 +1,25 @@
+@import "palette";
+
+h1 {
+    @include font(6rem, 0px, 0px);
+    font-family: $mainFont;
+    color: $primaryTitleColor;
+}
+
+h3 {
+    @include font(40px, 55px, 4.7px);
+    font-family: $mainFont;
+    color: $primaryTitleColor;
+}
+
+p {
+    @include font(16px, 28px, 2px);
+    font-family: $secondaryFont;
+    color: $paragraphColor;
+}
+
+h4 {
+    @include font(35px, 55px, 4.1px);
+    font-family: $mainFont;
+    color: $primaryTitleColor;
+}

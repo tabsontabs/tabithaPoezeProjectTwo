@@ -1,0 +1,16 @@
+@import 'palette';
+
+.gallery {
+    background-color: $backgroundTwo;
+    width: 100%;
+}
+
+.galleryFlex {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.gallery img {
+    width: 32%;
+    margin: 5% 0px;
+}

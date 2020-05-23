@@ -1,0 +1,9 @@
+@import 'palette';
+
+.button {
+    @include font(30px, 55px, 4px);
+    color: $paragraphColor;
+    background-color: $buttonColor;
+    font-family: $mainFont;
+    padding: 10px 5px;
+}

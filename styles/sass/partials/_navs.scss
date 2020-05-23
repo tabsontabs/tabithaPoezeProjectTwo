@@ -1,8 +1,21 @@
 @import "palette";
 
-nav {
-    background-color: black;
-    height: 50vh;
+.navFlex {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: $primaryTitleColor;
+    font-family: $mainFont;
+    font-size: 41.5px;
+    flex-basis: 60%;
+}
+
+.navLinks {
+    width: 40%;
+    display: flex;
+    justify-content: space-between; 
 }
 
 li a {
@@ -10,16 +23,3 @@ li a {
     font-family: $secondaryFont;
     @include font(20px, 29px, 1px);
 }
-
-.logo {
-    color: $primaryTitleColor;
-    font-family: $mainFont;
-    font-size: 41.5px;
-}
-
-.navFlex {
-    display: flex;
-    justify-content: flex-end;
-}
-
-

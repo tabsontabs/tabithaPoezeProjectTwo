@@ -1,0 +1,28 @@
+@import "palette";
+
+.newAdventure {
+    background-color: $backgroundOne;
+}
+
+.newAdventure h3 {
+    padding-top: 20%;
+}
+
+.newAdventure p {
+    margin-bottom: 5px;
+}
+
+.newAdventureFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newAdventureText {
+    width: 60%;
+}
+
+.newAdventurePic {
+    margin-top: 40%;
+    box-shadow: -15px 15px $buttonColor;
+    margin-bottom: 20%;
+}
