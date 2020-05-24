@@ -1,0 +1,56 @@
+@import 'palette';
+
+.contactForm {
+    background-color: $backgroundOne;
+}
+
+.form {
+    margin-left: 5%;
+    width: 50%;
+    background-color: $backgroundTwo;
+    position: relative;
+    bottom: 150px;
+    padding: 50px;
+    box-shadow: 20px 20px $primaryTitleColor;
+}
+
+.contactFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form input[type=text], .form input[type=email], .form input[type=textarea] {
+    background-color: $backgroundTwo;
+}
+
+input[type=textarea] {
+    height: 200px;
+}
+
+.infoHolder {
+    margin-right: 10%;
+    padding-top: 5%;
+}
+
+.contactInfo a {
+    display: block;
+    @include font(16px, 28px, 2px);
+    font-family: $secondaryFont;
+    color: $paragraphColor;
+}
+
+.contactInfo a:first-child {
+    padding-top: 10%;
+}
+
+.contactInfo a:nth-child(2) {
+    padding-top: 20%;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+

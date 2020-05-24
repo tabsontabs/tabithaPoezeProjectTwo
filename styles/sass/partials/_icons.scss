@@ -1,9 +1,14 @@
 @import 'palette';
 
-i {
+.pathwaysItem i {
     background-color: $buttonColor;
     color: $paragraphColor;
     font-size: 30px;
     border-radius: 50px;
     padding: 10px;
+}
+
+.socialIcons i {
+    color: $primaryTitleColor;
+    font-size: 25px;
 }

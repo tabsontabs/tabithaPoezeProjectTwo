@@ -31,7 +31,7 @@
     margin-top: 10%;
 }
 
-.blogText, .comments, form {
+.blogText, .comments, .blogForm {
     margin-left: 20%;
 }
 
@@ -111,6 +111,10 @@
 
 // form styles
 
-input[type=text], input[type=email], input[type=textarea]  {
+input[type=textarea] {
+    height: 150px;
+}
+
+.blogComponentsLeft input[type=text], .blogComponentsLeft input[type=email], .blogComponentsLeft input[type=textarea]  {
     background-color: $backgroundOne;
 }
