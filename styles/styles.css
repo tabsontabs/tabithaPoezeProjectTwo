@@ -391,6 +391,30 @@ header p {
   background-color: #1E140E;
 }
 
+.pathwaysFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pathwaysItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40vw;
+  padding-top: 5%;
+}
+
+.pathwaysText {
+  margin-left: 10px;
+}
+
+.lastPathway {
+  padding-bottom: 15%;
+}
+
 i {
   background-color: #555F02;
   color: #FAFFFE;
@@ -399,13 +423,108 @@ i {
   padding: 10px;
 }
 
-.fa-sticky-note {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+.programsLocations {
+  background-color: #262725;
 }
 
-.wrapper {
-  max-width: 1200px;
-  width: 80%;
-  margin: 0 auto;
+.plimg1, .plimg2 {
+  width: 45%;
+  position: relative;
+}
+
+.plimg1 {
+  bottom: 30px;
+  -webkit-box-shadow: 15px 15px #FFC600;
+          box-shadow: 15px 15px #FFC600;
+}
+
+.plimg2 {
+  top: 30px;
+  -webkit-box-shadow: -15px 15px #FFC600;
+          box-shadow: -15px 15px #FFC600;
+  margin-top: 2%;
+}
+
+.pltext1, .pltext2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  padding-top: 5%;
+}
+
+.pltext1 {
+  padding-right: 10%;
+}
+
+.pltext2 {
+  padding-left: 10%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.pltext2 h3 {
+  text-align: right;
+}
+
+.plflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.plbutton {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 40%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+.banner {
+  width: 100%;
+  background-image: url("../assets/banner-image.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.freeTrials {
+  background-color: #1E140E;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.freeTrials p {
+  text-align: left;
+  padding-bottom: 2%;
+}
+
+.freeTrialsContent {
+  width: 70%;
+}
+
+footer {
+  background-color: #262725;
+}
+
+footer p {
+  text-align: center;
+  padding: 5px 0px;
 }

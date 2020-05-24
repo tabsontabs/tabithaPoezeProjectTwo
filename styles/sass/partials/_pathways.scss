@@ -3,3 +3,22 @@
 .pathways {
     background-color: $backgroundOne;
 }
+
+.pathwaysFlex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pathwaysItem {
+    display: flex;
+    width: 40vw;
+    padding-top: 5%;
+}
+
+.pathwaysText {
+    margin-left: 10px;
+}
+
+.lastPathway {
+    padding-bottom: 15%;
+}

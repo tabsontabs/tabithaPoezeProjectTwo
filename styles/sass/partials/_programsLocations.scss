@@ -1,0 +1,57 @@
+@import 'palette';
+
+.programsLocations {
+    background-color: $backgroundTwo;
+}
+
+.plimg1, .plimg2 {
+    width: 45%;
+    position: relative;
+}
+
+.plimg1 {
+    bottom: 30px;
+    box-shadow: 15px 15px $primaryTitleColor;
+}
+
+.plimg2 {
+    top: 30px;
+    box-shadow: -15px 15px $primaryTitleColor;
+    margin-top: 2%;
+}
+
+.pltext1, .pltext2 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-top: 5%;
+}
+
+.pltext1 {
+    padding-right: 10%;
+}
+
+.pltext2 {
+    padding-left: 10%;
+    align-items: flex-end;
+}
+
+.pltext2 h3 {
+    text-align: right;
+}
+
+.plflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.plbutton {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 40%;
+    margin-top: 2%;
+    text-align: center;
+}
