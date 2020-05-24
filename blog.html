@@ -5,71 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mind n' Soul Blog</title>
-    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <header>
-        <div class="wrapper">
-            <nav>
-                <ul class="navFlex">
-                    <li class="logo">Mind n' Soul</li>
+    <header class="blogHeader">
+        <div class="subWrapper">
+            <nav class="navFlex">
+                <a href="#" class="logo">Mind n' Soul</a>
+                <ul class="navLinks">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <h5>Blog</h5>
+            <h2>Blog</h2>
         </div>
     </header>
 
-    <section>
-        <div>
-            <img src="./assets/post-image.jpg" alt="">
-            <h4>Come and discover our space</h4>
-            <p>Monday May 5th, 2019 by <span>Saron</span></p>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestias adipisci mollitia consectetur ratione facilis ad ullam odit. Suscipit, eaque tenetur deleniti modi accusantium tempore non ratione nulla beatae deserunt</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, eaque cum! Asperiores quaerat deleniti nobis animi voluptas, corporis fugiat cumque, est sint veritatis facere, optio dolor architecto sapiente eveniet! Minima!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo voluptate tempora eius explicabo praesentium iste? Dicta saepe, aut quibusdam eveniet ipsam modi, facere odit omnis officiis deleniti quas unde?</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ad exercitationem ea saepe nesciunt cum molestias praesentium distinctio, error maiores?</p>
+    <section class="blogComponents">
+        <div class="blogComponentsLeft">
+            <div class="border">
+                <img class="gong" src="./assets/post-image.jpg" alt="">
+                <div class="blogText">
+                    <h4>Come and discover our space</h4>
+                    <p class="dateAuthor">Monday May 5th, 2019 by <span>Saron</span></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestias adipisci mollitia consectetur ratione facilis ad ullam odit. Suscipit, eaque tenetur deleniti modi accusantium tempore non ratione nulla beatae deserunt</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, eaque cum! Asperiores quaerat deleniti nobis animi voluptas, corporis fugiat cumque, est sint veritatis facere, optio dolor architecto sapiente eveniet! Minima!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo voluptate tempora eius explicabo praesentium iste? Dicta saepe, aut quibusdam eveniet ipsam modi, facere odit omnis officiis deleniti quas unde?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ad exercitationem ea saepe nesciunt cum molestias praesentium distinctio, error maiores?</p>
+                </div>
             </div>
             <div class="comments">
                 <h4>Comments:</h4>
-                <div>
+                <div class="commentsFlex">
                     <img src="./assets/comment-image.jpg" alt="">
-                    <h7>Tuesday October 9th, 2019 by Davin</h7>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis eaque vel voluptates inventore suscipit nesciunt similique, officiis repellat est voluptatum porro, ipsum ipsa exercitationem reprehenderit assumenda in fugiat sint iste!</p>
+                    <div class="commentsText">
+                        <p>Tuesday October 9th, 2019 by Davin</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis eaque vel voluptates inventore suscipit nesciunt similique, officiis repellat est voluptatum porro, ipsum ipsa exercitationem reprehenderit assumenda in fugiat sint iste!</p>
+                    </div>
                 </div>
-                <div>
+                <div class="commentsFlex">
                     <img src="./assets/comment-image2.jpg" alt="">
-                    <h7>Wednesday October 10th, 2019 by Lisa</h7>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque cupiditate incidunt nostrum autem officiis dolore dolor voluptas natus, totam fuga aliquid laborum pariatur minus.</p>
+                    <div class="commentsText">
+                        <p>Wednesday October 10th, 2019 by Lisa</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos itaque cupiditate incidunt nostrum autem officiis dolore dolor voluptas natus, totam fuga aliquid laborum pariatur minus.</p>
+                    </div>
                 </div>
             </div>
             <form action="">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="email">
-                <label for=""></label>
-                <input type="text">
-                <button type="submit">Submit</button>
+                <label class="sr-only" for="name">Name</label>
+                <input id="name" class="name" type="text" placeholder="Name">
+                <label class="sr-only" for="email">Email address</label>
+                <input id="email" class="email" type="email" placeholder="Email address">
+                <label class="sr-only" for="comment">Comment</label>
+                <input id="comment" class="comment" type="textarea" placeholder="Comment">
+                <button class="button" type="submit">Post Comment</button>
             </form>
-        </>
-        <div>
-            <img src="./assets/sidebar-image.jpg" alt="">
-            <h6>Our mission</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quis?</p>
-            <h6>Recent Posts</h6>
-            <ul>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-            </ul>
         </div>
+        <aside class="blogComponentsRight">
+            <img class="rocks" src="./assets/sidebar-image.jpg" alt="">
+            <div class="rightText">
+                <h5>Our mission</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum, quis?</p>
+                <h5>Recent Posts</h5>
+                <ul>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                    <li><p>Lorem ipsum dolor sit.</p></li>
+                </ul>
+            </div>
+        </aside>
     </section>
     
     <footer>

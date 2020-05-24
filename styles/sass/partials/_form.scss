@@ -1,0 +1,41 @@
+@import 'palette';
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.name, .email {
+    width: 40%;
+}
+
+.comment {
+    width: 100%;
+    margin-top: 5%;
+}
+
+input[type=text], input[type=email], input[type=textarea]  {
+    border: 0;
+    padding: 0;
+    color: $paragraphColor;
+    border-bottom: 2px solid $primaryTitleColor;
+}
+
+input[type=text], input[type=email] {
+    padding: 10px 20px;
+}
+
+input[type=textarea] {
+    border: 2px solid $primaryTitleColor;
+    height: 150px;
+    padding-left: 20px;
+}
+
+form .button {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin-top: 5%;
+}

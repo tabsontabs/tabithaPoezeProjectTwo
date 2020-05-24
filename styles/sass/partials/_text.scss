@@ -6,6 +6,12 @@ h1 {
     color: $primaryTitleColor;
 }
 
+h2 {
+    @include font(5.5rem, 69.6px, 10.9px);
+    font-family: $mainFont;
+    color: $primaryTitleColor;
+}
+
 h3 {
     @include font(40px, 55px, 4.7px);
     font-family: $mainFont;
@@ -22,4 +28,10 @@ h4 {
     @include font(35px, 55px, 4.1px);
     font-family: $mainFont;
     color: $primaryTitleColor;
+}
+
+h5 {
+    @include font(25px, 45px, 3.8px);
+    font-family: $mainFont;
+    color: $paragraphColor;
 }

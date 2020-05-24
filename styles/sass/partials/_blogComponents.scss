@@ -1,0 +1,116 @@
+@import 'palette';
+
+.blogComponents {
+    background-color: $backgroundOne;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogComponentsLeft {
+    width: 60%;
+    bottom: 150px;
+    position: relative;
+}
+
+.gong {
+    width: 100%;
+    box-shadow: 20px 20px $buttonColor;
+}
+
+.border {
+    border-bottom: 5px solid $buttonColor;
+    border-right: 5px solid $buttonColor;
+}
+
+.blogText {
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+
+.blogText, .comments {
+    margin-top: 10%;
+}
+
+.blogText, .comments, form {
+    margin-left: 20%;
+}
+
+.blogText span {
+    font-weight: bold;
+}
+
+.blogText p {
+    padding-top: 15px;
+}
+
+.dateAuthor {
+    font-style: italic;
+}
+
+
+// right part
+
+.blogComponentsRight {
+    width: 25%;
+    position: relative;
+    top: 100px;
+    height: 100%;
+}
+
+.rocks {
+    width: 100%;
+    box-shadow: -20px 20px $buttonColor;
+}
+
+.rightText {
+    box-shadow: -20px 20px $buttonColor;
+    background-color: $buttonColor;
+}
+
+.rightText ul {
+    padding-left: 30px;
+}
+
+.rightText li {
+    list-style: disc;
+    color: $primaryTitleColor;
+    font-size: 20px;
+}
+
+// comments styles
+
+.comments h4 {
+    color: $paragraphColor;
+}
+
+.commentsFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.commentsText{
+    width: 80%;
+}
+
+.commentsFlex img {
+    height: 50%;
+}
+
+.commentsText p:first-of-type {
+    color: $primaryTitleColor;
+}
+
+.commentsFlex:first-of-type {
+    margin-top: 5%;
+}
+
+.commentsFlex:last-of-type {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+// form styles
+
+input[type=text], input[type=email], input[type=textarea]  {
+    background-color: $backgroundOne;
+}
