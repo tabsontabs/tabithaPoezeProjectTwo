@@ -507,6 +507,12 @@ nav {
   font-size: 25px;
 }
 
+@media (max-width: 1050px) {
+  .socialIcons i {
+    font-size: 3rem;
+  }
+}
+
 .programsLocations {
   background-color: #262725;
 }
@@ -803,6 +809,28 @@ header h2 {
   }
 }
 
+@media (max-width: 1050px) {
+  header h2 {
+    position: initial;
+    top: 0;
+    margin-top: 30%;
+    text-align: center;
+  }
+  .contactHeader h2 {
+    position: initial;
+    top: 0;
+    margin-top: 30%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactHeader h2 {
+    font-size: 4rem;
+    margin-top: 15%;
+  }
+}
+
 .blogComponents {
   background-color: #1E140E;
 }
@@ -939,6 +967,32 @@ input[type=textarea] {
   background-color: #1E140E;
 }
 
+@media (max-width: 1050px) {
+  .blogComponentsFlex {
+    display: block;
+  }
+  .blogComponentsLeft {
+    width: 70%;
+  }
+  aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    position: initial;
+    top: 0;
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background-color: initial;
+  }
+  .rightText {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,6 +1043,21 @@ form .button {
   margin-top: 5%;
 }
 
+@media (max-width: 700px) {
+  .name, .email {
+    width: 100%;
+  }
+  .comment {
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 500px) {
+  input[type=text], input[type=email], input[type=textarea] {
+    padding: 10px 10px;
+  }
+}
+
 .contactForm {
   background-color: #1E140E;
 }
@@ -1028,6 +1097,7 @@ input[type=textarea] {
 .infoHolder {
   margin-right: 10%;
   padding-top: 5%;
+  padding-left: 5%;
 }
 
 address a {
@@ -1059,6 +1129,65 @@ address a:nth-child(2) {
 
 address {
   font-style: normal;
+}
+
+@media (max-width: 1050px) {
+  .form {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .infoHolder {
+    padding-top: 0;
+  }
+  .socialIcons {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+  }
+  address {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  address a:first-child {
+    padding-top: 5%;
+  }
+  address a:nth-child(2) {
+    padding-top: 5%;
+  }
+  .infoHolder {
+    padding-left: 0;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 700px) {
+  .form {
+    margin: 5% auto;
+    background-color: #262725;
+    position: initial;
+    bottom: 0;
+    padding: 50px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .form {
+    width: 50%;
+  }
 }
 
 .mobileNav {

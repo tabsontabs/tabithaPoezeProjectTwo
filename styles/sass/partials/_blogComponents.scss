@@ -129,3 +129,29 @@ input[type=textarea] {
 .blogComponentsLeft input[type=text], .blogComponentsLeft input[type=email], .blogComponentsLeft input[type=textarea]  {
     background-color: $backgroundOne;
 }
+
+
+@media (max-width: 1050px) {
+    .blogComponentsFlex {
+        display: block;
+    }
+
+    .blogComponentsLeft {
+        width: 70%;
+    }
+
+    aside {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        position: initial;
+        top: 0;
+        height: 100%;
+        box-shadow: none;
+        background-color: initial;
+    }
+
+    .rightText {
+    box-shadow: none;
+    }
+}

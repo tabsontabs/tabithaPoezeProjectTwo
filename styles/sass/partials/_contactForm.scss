@@ -31,6 +31,7 @@ input[type=textarea] {
 .infoHolder {
     margin-right: 10%;
     padding-top: 5%;
+    padding-left: 5%;
 }
 
 address a {
@@ -56,4 +57,65 @@ address a:nth-child(2) {
 
 address {
     font-style: normal;
+}
+
+@media (max-width: 1050px) {
+
+    .form {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .contactFlex {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .infoHolder {
+        padding-top: 0;
+    }
+
+    .socialIcons {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    address {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 5%;
+    }
+
+    address a:first-child {
+    padding-top: 5%;
+    }
+
+    address a:nth-child(2) {
+    padding-top: 5%;
+    }
+
+    .infoHolder {
+        padding-left: 0;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 700px) {
+
+.form {
+    margin: 5% auto;
+    background-color: $backgroundTwo;
+    position: initial;
+    bottom: 0;
+    padding: 50px;
+    box-shadow: none;
+    width: 60%;
+}
+}
+
+@media (max-width: 500px) {
+
+.form {
+    width: 50%;
+}
 }

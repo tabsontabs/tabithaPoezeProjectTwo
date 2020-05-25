@@ -110,3 +110,31 @@ header p {
     font-size: 20px;
 }
 }
+
+// media queries contact page
+
+@media (max-width: 1050px) {
+
+header h2 {
+    position: initial;
+    top: 0;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.contactHeader h2 {
+    position: initial;
+    top: 0;
+    margin-top: 30%;
+    text-align: center;
+}
+}
+
+@media (max-width: 700px) {
+
+.contactHeader h2 {
+    font-size: 4rem;
+    margin-top: 15%;
+}
+
+}
