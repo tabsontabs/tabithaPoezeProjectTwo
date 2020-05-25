@@ -22,3 +22,22 @@
 .lastPathway {
     padding-bottom: 15%;
 }
+
+@media (max-width: 1050px) {
+
+.pathways h4 {
+    font-size: 30px;
+}
+}
+
+@media (max-width: 950px) {
+
+.pathwaysFlex {
+    flex-direction: column;
+}
+
+.pathwaysItem {
+    width: 100%;
+}
+}
+

@@ -287,6 +287,10 @@ h5 {
   color: #FAFFFE;
 }
 
+nav {
+  padding-top: 5px;
+}
+
 .navFlex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +327,12 @@ h5 {
   letter-spacing: 1px;
 }
 
+@media (max-width: 450px) {
+  .logo {
+    font-size: 25px;
+  }
+}
+
 .newAdventure {
   background-color: #1E140E;
 }
@@ -355,6 +365,48 @@ h5 {
   margin-bottom: 20%;
 }
 
+@media (max-width: 1050px) {
+  .newAdventureFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .newAdventure h3 {
+    padding-top: 5%;
+  }
+  .newAdventurePic {
+    margin-top: 10%;
+    margin-bottom: 0%;
+    float: left;
+  }
+  .newAdventureText {
+    width: 100%;
+    text-align: center;
+  }
+  .newAdventure a {
+    margin: 2% auto 5% auto;
+    display: block;
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .newAdventure a {
+    width: 100%;
+  }
+  .newAdventurePic {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
 .button {
   font-size: 30px;
   line-height: 55px;
@@ -384,6 +436,18 @@ h5 {
   margin: 5% 0px;
 }
 
+@media (max-width: 600px) {
+  .galleryFlex img:first-of-type {
+    width: 100%;
+  }
+  .galleryFlex img:nth-last-of-type(2) {
+    display: none;
+  }
+  .galleryFlex img:last-of-type {
+    display: none;
+  }
+}
+
 .pathways {
   background-color: #1E140E;
 }
@@ -410,6 +474,24 @@ h5 {
 
 .lastPathway {
   padding-bottom: 15%;
+}
+
+@media (max-width: 1050px) {
+  .pathways h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 950px) {
+  .pathwaysFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pathwaysItem {
+    width: 100%;
+  }
 }
 
 .pathwaysItem i {
@@ -493,9 +575,74 @@ h5 {
 .plbutton {
   padding-top: 0px;
   padding-bottom: 0px;
-  width: 40%;
   margin-top: 2%;
   text-align: center;
+}
+
+.pltext2 a:last-child {
+  margin-bottom: 10%;
+}
+
+@media (max-width: 950px) {
+  .plflex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .plimg1, .plimg2 {
+    width: 80%;
+    bottom: 0;
+    top: 0;
+  }
+  .plimg1 {
+    -webkit-box-shadow: 15px -15px #FFC600;
+            box-shadow: 15px -15px #FFC600;
+  }
+  .plimg2 {
+    -webkit-box-shadow: -15px 15px #FFC600;
+            box-shadow: -15px 15px #FFC600;
+  }
+  .pltext1, .pltext2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+    padding-top: 5%;
+  }
+  .pltext1 {
+    padding-right: 0%;
+  }
+  .pltext2 {
+    padding-left: 0%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .pltext2 h3 {
+    text-align: left;
+  }
+  .plbutton {
+    display: block;
+    width: 50%;
+    margin: 2% auto;
+  }
+  .pltext2 a:last-child {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .programsLocations a {
+    width: 100%;
+  }
 }
 
 .banner {
@@ -504,6 +651,24 @@ h5 {
   height: 80vh;
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 850px) {
+  .banner {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .banner {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner {
+    height: 20vh;
+  }
 }
 
 .freeTrials {
@@ -520,6 +685,26 @@ h5 {
 
 .freeTrialsContent {
   width: 70%;
+}
+
+@media (max-width: 500px) {
+  .freeTrials p {
+    text-align: center;
+    padding-bottom: 5%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .freeTrialsContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .freeTrials a {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 footer {
@@ -559,6 +744,7 @@ header p {
   width: 40%;
   position: absolute;
   top: 35%;
+  height: 75%;
 }
 
 .blogHeader {
@@ -573,6 +759,48 @@ header h2 {
 
 .contactHeader {
   background-image: url("../assets/contact-image-1.jpg");
+}
+
+@media (max-width: 1050px) {
+  .blackWhite {
+    display: none;
+  }
+  .main {
+    width: 100%;
+    position: initial;
+    text-align: center;
+    padding-top: 20%;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 60vh;
+  }
+  .main {
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 50vh;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  header p {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 3rem;
+  }
+  header p {
+    font-size: 20px;
+  }
 }
 
 .blogComponents {
@@ -881,5 +1109,11 @@ input[type="checkbox"] {
     color: #FAFFFE;
     font-size: 40px;
     display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .hamburger {
+    font-size: 30px;
   }
 }

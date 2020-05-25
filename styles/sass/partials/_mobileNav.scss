@@ -46,3 +46,11 @@ input[type="checkbox"]:checked + .mobileNavLinks {
     display: block;
 }
 }
+
+@media (max-width: 450px) {
+
+.hamburger {
+    font-size: 30px;
+}
+
+}

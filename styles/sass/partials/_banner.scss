@@ -1,9 +1,29 @@
 
-
 .banner {
     width: 100%;
     background-image: url('../assets/banner-image.jpg');
     height: 80vh;
     background-position: center;
     background-size: cover;
+}
+
+@media (max-width: 850px) {
+
+.banner {
+    height: 60vh;
+}
+}
+
+@media (max-width: 500px) {
+
+.banner {
+    height: 40vh;
+}
+}
+
+@media (max-width: 400px) {
+
+.banner {
+    height: 20vh
+}
 }

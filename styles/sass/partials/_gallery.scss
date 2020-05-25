@@ -14,3 +14,18 @@
     width: 32%;
     margin: 5% 0px;
 }
+
+@media (max-width: 600px) {
+
+.galleryFlex img:first-of-type {
+    width: 100%;
+}
+
+.galleryFlex img:nth-last-of-type(2) {
+    display: none;
+}
+
+.galleryFlex img:last-of-type {
+    display: none;
+}
+}

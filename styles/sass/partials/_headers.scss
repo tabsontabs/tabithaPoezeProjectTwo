@@ -38,6 +38,7 @@ header p {
     width: 40%;
     position: absolute;
     top: 35%;
+    height: 75%;
 }
 
 // blog header styles
@@ -56,4 +57,56 @@ header h2 {
 
 .contactHeader {
     background-image: url("../assets/contact-image-1.jpg");
+}
+
+// media queries home page
+
+@media (max-width: 1050px) {
+    .blackWhite {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        position: initial;
+        text-align: center;
+        padding-top: 20%;
+    }
+}
+
+@media (max-width: 700px) {
+
+header {
+    height: 60vh;
+}
+
+.main {
+    padding-top: 10%;
+}
+}
+
+@media (max-width: 600px) {
+
+header {
+    height: 50vh;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+header p {
+    font-size: 25px;
+}
+}
+
+@media (max-width: 450px) {
+
+h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 20px;
+}
 }

@@ -51,7 +51,70 @@
 .plbutton {
     padding-top: 0px;
     padding-bottom: 0px;
-    width: 40%;
     margin-top: 2%;
     text-align: center;
+}
+
+.pltext2 a:last-child {
+    margin-bottom: 10%;
+}
+
+@media (max-width: 950px) {
+
+.plflex {
+    flex-direction: column;
+    align-items: center;
+}
+
+.plimg1, .plimg2 {
+    width: 80%;
+    bottom: 0;
+    top: 0;
+}
+
+.plimg1 {
+    box-shadow: 15px -15px $primaryTitleColor;
+}
+
+.plimg2 {
+    box-shadow: -15px 15px $primaryTitleColor;
+}
+
+.pltext1, .pltext2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 5%;
+}
+
+.pltext1 {
+    padding-right: 0%;
+}
+
+.pltext2 {
+    padding-left: 0%;
+    align-items: flex-start;
+}
+
+.pltext2 h3 {
+    text-align: left;
+}
+
+.plbutton {
+    display: block;
+    width: 50%;
+    margin: 2% auto;
+}
+
+.pltext2 a:last-child {
+    margin-bottom: 5%;
+}
+}
+
+@media (max-width: 600px) {
+
+.programsLocations a {
+    width: 100%;
+}
+
 }

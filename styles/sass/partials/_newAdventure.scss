@@ -27,3 +27,44 @@
     box-shadow: -15px 15px $buttonColor;
     margin-bottom: 20%;
 }
+
+@media (max-width: 1050px) {
+
+.newAdventureFlex {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.newAdventure h3 {
+    padding-top: 5%;
+}
+
+.newAdventurePic {
+    margin-top: 10%;
+    margin-bottom: 0%;
+    float: left;
+}
+
+.newAdventureText {
+    width: 100%;
+    text-align: center;
+}
+
+.newAdventure a {
+    margin: 2% auto 5% auto;
+    display: block;
+    width: 50%;
+}
+}
+
+@media (max-width: 600px) {
+
+.newAdventure a {
+    width: 100%;
+}
+
+.newAdventurePic {
+    box-shadow: none;
+}
+}

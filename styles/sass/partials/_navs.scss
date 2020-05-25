@@ -1,5 +1,9 @@
 @import "palette";
 
+nav {
+    padding-top: 5px;
+}
+
 .navFlex {
     display: flex;
     align-items: center;
@@ -23,4 +27,12 @@
     color: $paragraphColor;
     font-family: $secondaryFont;
     @include font(20px, 29px, 1px)
+}
+
+
+@media (max-width: 450px) {
+
+.logo {
+    font-size: 25px;
+}
 }
