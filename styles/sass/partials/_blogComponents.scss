@@ -2,37 +2,39 @@
 
 .blogComponents {
     background-color: $backgroundOne;
+}
+
+.blogComponentsFlex {
     display: flex;
     justify-content: space-between;
 }
 
 .blogComponentsLeft {
-    width: 60%;
+    flex-basis: 60%;
     bottom: 150px;
     position: relative;
 }
 
 .gong {
-    width: 100%;
+    width: 98%;
     box-shadow: 20px 20px $buttonColor;
 }
 
-.border {
-    border-bottom: 5px solid $buttonColor;
-    border-right: 5px solid $buttonColor;
+.blogText {
+    box-shadow: 4px 4px $buttonColor;
+    padding-left: 20%;
 }
 
-.blogText {
-    padding-bottom: 50px;
+.blogText h4 {
+    padding-top: 10%;
+}
+
+.blogText p {
     padding-right: 30px;
 }
 
-.blogText, .comments {
-    margin-top: 10%;
-}
-
-.blogText, .comments, .blogForm {
-    margin-left: 20%;
+.blogText p:last-of-type {
+    padding-bottom: 5%;
 }
 
 .blogText span {
@@ -40,7 +42,11 @@
 }
 
 .blogText p {
-    padding-top: 15px;
+    padding-top: 20px;
+}
+
+.blogText p:first-of-type {
+    padding-top: 0px;
 }
 
 .dateAuthor {
@@ -48,23 +54,23 @@
 }
 
 
-// right part
+// aside styles
 
-.blogComponentsRight {
+aside {
     width: 25%;
     position: relative;
     top: 100px;
     height: 100%;
+    background-color: $buttonColor;
+    box-shadow: -20px 20px $buttonColor;
 }
 
 .rocks {
     width: 100%;
-    box-shadow: -20px 20px $buttonColor;
 }
 
 .rightText {
-    box-shadow: -20px 20px $buttonColor;
-    background-color: $buttonColor;
+    box-shadow: 20px 20px $buttonColor;
 }
 
 .rightText ul {
@@ -79,8 +85,13 @@
 
 // comments styles
 
+.comments, .blogForm {
+    margin-left: 20%;
+}
+
 .comments h4 {
     color: $paragraphColor;
+    padding-top: 5%;
 }
 
 .commentsFlex {
@@ -106,7 +117,7 @@
 
 .commentsFlex:last-of-type {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 // form styles

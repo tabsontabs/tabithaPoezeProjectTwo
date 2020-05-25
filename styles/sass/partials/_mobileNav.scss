@@ -1,0 +1,48 @@
+@import 'palette';
+
+.mobileNav {
+    display: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+
+.mobileNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navFlex {
+    display: none;
+}
+
+.mobileNavFlex {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.mobileNavLinks {
+    display: none;
+}
+
+.mobileNavLinks a {
+    text-transform: uppercase;
+    color: $paragraphColor;
+    font-family: $secondaryFont;
+    @include font(20px, 29px, 1px)
+}
+
+input[type="checkbox"]:checked + .mobileNavLinks {
+    display: block;
+}
+
+.hamburger {
+    color: $paragraphColor;
+    font-size: 40px;
+    display: block;
+}
+}

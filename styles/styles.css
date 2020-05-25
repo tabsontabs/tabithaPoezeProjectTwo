@@ -221,6 +221,12 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   overflow: hidden;
 }
 
+.mainWrapper {
+  max-width: 1900px;
+  position: relative;
+  margin: 0 auto;
+}
+
 .subWrapper {
   max-width: 1200px;
   width: 80%;
@@ -237,8 +243,6 @@ a {
 
 h1 {
   font-size: 6rem;
-  line-height: 0px;
-  letter-spacing: 0px;
   font-family: "Dokdo", cursive;
   color: #FFC600;
 }
@@ -310,7 +314,8 @@ h5 {
           justify-content: space-between;
 }
 
-li a {
+.navLinks a {
+  text-transform: uppercase;
   color: #FAFFFE;
   font-family: "Lato", sans-serif;
   font-size: 20px;
@@ -531,37 +536,29 @@ header {
   width: 100%;
   background-position: center;
   background-size: cover;
-  position: relative;
 }
 
 .homeHeader {
   background-image: url("../assets/home-image-1.jpg");
 }
 
-header h1 {
-  position: absolute;
-  bottom: 50%;
-  right: 19%;
-}
-
-header p {
-  position: absolute;
-  bottom: 61%;
-  right: 36%;
-}
-
 header p {
   font-size: 50px;
-  line-height: 1px;
-  letter-spacing: 3px;
   font-family: "Lato", sans-serif;
   color: #FAFFFE;
 }
 
-.blackWhite {
+.main {
+  width: 50%;
   position: absolute;
+  top: 36%;
+  left: 42%;
+}
+
+.blackWhite {
   width: 40%;
-  top: 30%;
+  position: absolute;
+  top: 35%;
 }
 
 .blogHeader {
@@ -571,7 +568,7 @@ header p {
 
 header h2 {
   position: absolute;
-  top: 50%;
+  top: 55%;
 }
 
 .contactHeader {
@@ -580,6 +577,9 @@ header h2 {
 
 .blogComponents {
   background-color: #1E140E;
+}
+
+.blogComponentsFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -589,33 +589,34 @@ header h2 {
 }
 
 .blogComponentsLeft {
-  width: 60%;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
   bottom: 150px;
   position: relative;
 }
 
 .gong {
-  width: 100%;
+  width: 98%;
   -webkit-box-shadow: 20px 20px #555F02;
           box-shadow: 20px 20px #555F02;
 }
 
-.border {
-  border-bottom: 5px solid #555F02;
-  border-right: 5px solid #555F02;
+.blogText {
+  -webkit-box-shadow: 4px 4px #555F02;
+          box-shadow: 4px 4px #555F02;
+  padding-left: 20%;
 }
 
-.blogText {
-  padding-bottom: 50px;
+.blogText h4 {
+  padding-top: 10%;
+}
+
+.blogText p {
   padding-right: 30px;
 }
 
-.blogText, .comments {
-  margin-top: 10%;
-}
-
-.blogText, .comments, .blogForm {
-  margin-left: 20%;
+.blogText p:last-of-type {
+  padding-bottom: 5%;
 }
 
 .blogText span {
@@ -623,30 +624,34 @@ header h2 {
 }
 
 .blogText p {
-  padding-top: 15px;
+  padding-top: 20px;
+}
+
+.blogText p:first-of-type {
+  padding-top: 0px;
 }
 
 .dateAuthor {
   font-style: italic;
 }
 
-.blogComponentsRight {
+aside {
   width: 25%;
   position: relative;
   top: 100px;
   height: 100%;
+  background-color: #555F02;
+  -webkit-box-shadow: -20px 20px #555F02;
+          box-shadow: -20px 20px #555F02;
 }
 
 .rocks {
   width: 100%;
-  -webkit-box-shadow: -20px 20px #555F02;
-          box-shadow: -20px 20px #555F02;
 }
 
 .rightText {
-  -webkit-box-shadow: -20px 20px #555F02;
-          box-shadow: -20px 20px #555F02;
-  background-color: #555F02;
+  -webkit-box-shadow: 20px 20px #555F02;
+          box-shadow: 20px 20px #555F02;
 }
 
 .rightText ul {
@@ -659,8 +664,13 @@ header h2 {
   font-size: 20px;
 }
 
+.comments, .blogForm {
+  margin-left: 20%;
+}
+
 .comments h4 {
   color: #FAFFFE;
+  padding-top: 5%;
 }
 
 .commentsFlex {
@@ -690,7 +700,7 @@ header h2 {
 
 .commentsFlex:last-of-type {
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 input[type=textarea] {
@@ -726,16 +736,22 @@ input[type=text], input[type=email], input[type=textarea] {
   padding: 0;
   color: #FAFFFE;
   border-bottom: 2px solid #FFC600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 2px;
+  color: #FAFFFE;
+  font-family: "Lato", sans-serif;
+  font-weight: lighter;
 }
 
 input[type=text], input[type=email] {
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
 
 input[type=textarea] {
   border: 2px solid #FFC600;
   height: 150px;
-  padding-left: 20px;
+  padding: 20px 20px;
 }
 
 form .button {
@@ -786,7 +802,7 @@ input[type=textarea] {
   padding-top: 5%;
 }
 
-.contactInfo a {
+address a {
   display: block;
   font-size: 16px;
   line-height: 28px;
@@ -795,11 +811,11 @@ input[type=textarea] {
   color: #FAFFFE;
 }
 
-.contactInfo a:first-child {
+address a:first-child {
   padding-top: 10%;
 }
 
-.contactInfo a:nth-child(2) {
+address a:nth-child(2) {
   padding-top: 20%;
 }
 
@@ -811,4 +827,59 @@ input[type=textarea] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 60%;
+}
+
+address {
+  font-style: normal;
+}
+
+.mobileNav {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .mobileNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navFlex {
+    display: none;
+  }
+  .mobileNavFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+  .mobileNavLinks {
+    display: none;
+  }
+  .mobileNavLinks a {
+    text-transform: uppercase;
+    color: #FAFFFE;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 1px;
+  }
+  input[type="checkbox"]:checked + .mobileNavLinks {
+    display: block;
+  }
+  .hamburger {
+    color: #FAFFFE;
+    font-size: 40px;
+    display: block;
+  }
 }

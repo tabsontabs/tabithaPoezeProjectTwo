@@ -1,7 +1,7 @@
 @import "palette";
 
 h1 {
-    @include font(6rem, 0px, 0px);
+    font-size: 6rem;
     font-family: $mainFont;
     color: $primaryTitleColor;
 }

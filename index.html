@@ -11,20 +11,37 @@
 </head>
 <body>
     <header class="homeHeader">
-        <div class="subWrapper">
-            <nav class="navFlex">
-                <a href="#" class="logo">Mind n' Soul</a>
-                <ul class="navLinks">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        <class="mainWrapper">
+            <div class="subWrapper">
+                <nav class="navFlex">
+                    <a href="#" class="logo">Mind n' Soul</a>
+                    <ul class="navLinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="mobileNav">
+                    <a href="#" class="logo">Mind n' Soul</a>
+                    <div class="mobileNavFlex">
+                        <label for="toggle"><i class="fa hamburger fa-bars"></i></label>
+                        <input type="checkbox" id="toggle" name="toggle"/>
+                        <ul class="mobileNavLinks">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <img class="blackWhite" src="./assets/Group.jpg" alt="">
+            <div class="main">
+                <p>welcome to</p>
+                <h1>Mind n' Soul</h1> 
+            </div>
         </div>
-        <img class="blackWhite" src="./assets/Group.jpg" alt="">
-        <p>welcome to</p>
-        <h1>Mind n' Soul</h1> 
     </header>
 
     <section class="newAdventure">
@@ -34,7 +51,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non eaque iusto dolores et iste. Ullam dignissimos, asperiores enim provident voluptates nesciunt tempore maiores culpa saepe odio pariatur error inventore ab! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nam eligendi itaque molestias. Dolorum, sequi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, delectus?</p>
                 <a class="button" href="">Find out More</a>
             </div>
-            <div class="new-adventure-img">
+            <div class="newAdventureImg">
                 <img class="newAdventurePic" src="./assets/small-box.jpg" alt="">
             </div>
         </div>
@@ -82,20 +99,22 @@
     </section>
 
     <section class="programsLocations">
-        <div class="plflex">
-            <img class="plimg1" src="./assets/left-image.jpg" alt="">
-            <div class="pltext1">
-                <h3>Group programs</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero ab id quia saepe commodi explicabo at possimus cum a expedita sapiente excepturi voluptates odit culpa, aut, distinctio rem alias.</p>
-                <a class="button plbutton" href="">Read more</a>
+        <div class="mainWrapper">
+            <div class="plflex">
+                <img class="plimg1" src="./assets/left-image.jpg" alt="">
+                <div class="pltext1">
+                    <h3>Group programs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero ab id quia saepe commodi explicabo at possimus cum a expedita sapiente excepturi voluptates odit culpa, aut, distinctio rem alias.</p>
+                    <a class="button plbutton" href="">Read more</a>
+                </div>
+                <div class="pltext2">
+                    <h3>New locations</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero ab id quia saepe commodi explicabo at
+                        possimus cum a expedita sapiente excepturi voluptates odit culpa, aut, distinctio rem alias.</p>
+                    <a class="button plbutton" href="">Read more</a>
+                </div>
+                <img class="plimg2" src="./assets/right-image.jpg" alt="">
             </div>
-            <div class="pltext2">
-                <h3>New locations</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum libero ab id quia saepe commodi explicabo at
-                    possimus cum a expedita sapiente excepturi voluptates odit culpa, aut, distinctio rem alias.</p>
-                <a class="button plbutton" href="">Read more</a>
-            </div>
-            <img class="plimg2" src="./assets/right-image.jpg" alt="">
         </div>
     </section>
 

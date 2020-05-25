@@ -33,18 +33,18 @@ input[type=textarea] {
     padding-top: 5%;
 }
 
-.contactInfo a {
+address a {
     display: block;
     @include font(16px, 28px, 2px);
     font-family: $secondaryFont;
     color: $paragraphColor;
 }
 
-.contactInfo a:first-child {
+address a:first-child {
     padding-top: 10%;
 }
 
-.contactInfo a:nth-child(2) {
+address a:nth-child(2) {
     padding-top: 20%;
 }
 
@@ -54,3 +54,6 @@ input[type=textarea] {
     width: 60%;
 }
 
+address {
+    font-style: normal;
+}

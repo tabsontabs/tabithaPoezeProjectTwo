@@ -8,7 +8,6 @@ header {
     width: 100%;
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
 // home header styles
@@ -17,28 +16,28 @@ header {
     background-image: url('../assets/home-image-1.jpg');
 }
 
-header h1 {
-    position: absolute;
-    bottom: 50%;
-    right: 19%;
-}
-
 header p {
-    position: absolute;
-    bottom: 61%;
-    right: 36%;
-}
-
-header p {
-    @include font(50px, 1px, 3px);
+    font-size: 50px;
     font-family: $secondaryFont;
     color: $paragraphColor;
 }
 
-.blackWhite {
+// .homeHeaderContent {
+//     display: flex;
+//     position: relative;
+// }
+
+.main {
+    width: 50%;
     position: absolute;
+    top: 36%;
+    left: 42%;
+}
+
+.blackWhite {
     width: 40%;
-    top: 30%;
+    position: absolute;
+    top: 35%;
 }
 
 // blog header styles
@@ -50,7 +49,7 @@ header p {
 
 header h2 {
     position: absolute;
-    top: 50%;
+    top: 55%;
 }
 
 // contact header styles

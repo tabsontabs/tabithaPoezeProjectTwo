@@ -1,6 +1,5 @@
 @import 'palette';
 
-
 form {
     display: flex;
     flex-wrap: wrap;
@@ -21,16 +20,20 @@ input[type=text], input[type=email], input[type=textarea]  {
     padding: 0;
     color: $paragraphColor;
     border-bottom: 2px solid $primaryTitleColor;
+    @include font(20px, 32px, 2px);
+    color: $paragraphColor;
+    font-family: $secondaryFont;
+    font-weight: lighter;
 }
 
 input[type=text], input[type=email] {
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 input[type=textarea] {
     border: 2px solid $primaryTitleColor;
     height: 150px;
-    padding-left: 20px;
+    padding: 20px 20px;
 }
 
 form .button {
