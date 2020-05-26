@@ -20,18 +20,18 @@ nav {
     width: 40%;
     display: flex;
     justify-content: space-between; 
-}
 
-.navLinks a {
-    text-transform: uppercase;
-    color: $paragraphColor;
-    font-family: $secondaryFont;
-    @include font(20px, 29px, 1px)
+        a {
+            text-transform: uppercase;
+            color: $paragraphColor;
+            font-family: $secondaryFont;
+            @include font(20px, 29px, 1px)
+        }
 }
 
 
 @media (max-width: 450px) {
-
+    
 .logo {
     font-size: 25px;
 }

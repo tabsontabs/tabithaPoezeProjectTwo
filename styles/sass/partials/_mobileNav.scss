@@ -10,13 +10,13 @@ input[type="checkbox"] {
 
 @media (max-width: 1000px) {
 
+.navFlex {
+    display: none;
+}
+
 .mobileNav {
     display: flex;
     justify-content: space-between;
-}
-
-.navFlex {
-    display: none;
 }
 
 .mobileNavFlex {
@@ -27,14 +27,15 @@ input[type="checkbox"] {
 
 .mobileNavLinks {
     display: none;
+
+        a {
+            text-transform: uppercase;
+            color: $paragraphColor;
+            font-family: $secondaryFont;
+            @include font(20px, 29px, 1px)
+        }
 }
 
-.mobileNavLinks a {
-    text-transform: uppercase;
-    color: $paragraphColor;
-    font-family: $secondaryFont;
-    @include font(20px, 29px, 1px)
-}
 
 input[type="checkbox"]:checked + .mobileNavLinks {
     display: block;
@@ -52,5 +53,4 @@ input[type="checkbox"]:checked + .mobileNavLinks {
 .hamburger {
     font-size: 30px;
 }
-
 }

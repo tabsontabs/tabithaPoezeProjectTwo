@@ -22,11 +22,6 @@ header p {
     color: $paragraphColor;
 }
 
-// .homeHeaderContent {
-//     display: flex;
-//     position: relative;
-// }
-
 .main {
     width: 50%;
     position: absolute;
@@ -61,17 +56,18 @@ header h2 {
 
 
 @media (max-width: 1050px) {
-    // home page
-    .blackWhite {
-        display: none;
-    }
 
-    .main {
-        width: 100%;
-        position: initial;
-        text-align: center;
-        padding-top: 20%;
-    }
+// home page
+.blackWhite {
+    display: none;
+}
+
+.main {
+    width: 100%;
+    position: initial;
+    text-align: center;
+    padding-top: 20%;
+}
 
 // blog and contact pages
 header h2 {

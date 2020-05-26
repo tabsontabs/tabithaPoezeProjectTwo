@@ -1,12 +1,17 @@
+//brand colors
 $primaryTitleColor: #FFC600;
 $buttonColor: #555F02;
 $backgroundOne: #1E140E;
 $backgroundTwo: #262725;
 $paragraphColor: #FAFFFE;
 
+
+//brand fonts
 $mainFont: 'Dokdo', cursive;
 $secondaryFont: 'Lato', sans-serif;
 
+
+// mixin to set font size, line height, and letter spacing for text components
 @mixin font($size, $lh, $ls) {
     font-size: $size;
     line-height: $lh;

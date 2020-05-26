@@ -3,29 +3,33 @@
 .gallery {
     background-color: $backgroundTwo;
     width: 100%;
-}
-
-.galleryFlex {
-    display: flex;
-    justify-content: space-between;
-} 
-
-.gallery img {
-    width: 32%;
-    margin: 5% 0px;
+        .galleryFlex {
+            display: flex;
+            justify-content: space-between;
+        } 
+            img {
+                width: 32%;
+                margin: 5% 0px;
+            }
 }
 
 @media (max-width: 600px) {
 
-.galleryFlex img:first-of-type {
-    width: 100%;
-}
+.galleryFlex {
 
-.galleryFlex img:nth-last-of-type(2) {
-    display: none;
-}
+    img {
 
-.galleryFlex img:last-of-type {
-    display: none;
+        &:first-of-type {
+            width: 100%;
+        }
+
+        &:nth-last-of-type(2) {
+            display: none;
+        }
+
+        &:last-of-type {
+            display: none;
+        }
+    }
 }
 }
