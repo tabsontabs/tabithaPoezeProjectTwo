@@ -95,6 +95,11 @@ header {
     padding-top: 10%;
 }
 
+// blog page
+.blogHeader {
+    height: 70vh;
+}
+
 // contact page
 .contactHeader h2 {
     font-size: 4rem;
@@ -116,7 +121,9 @@ header p {
     font-size: 25px;
 }
 
-.blogHeader {
+//blog & contact page 
+
+.blogHeader, .contactHeader {
     height: 60vh;
 
         h2 {

@@ -53,6 +53,7 @@
     padding-bottom: 0px;
     margin-top: 2%;
     text-align: center;
+    width: 100%;
 }
 
 .pltext2 a:last-child {
@@ -97,7 +98,7 @@
 }
 
 .pltext2 h3 {
-    text-align: center;
+    text-align: left;
 }
 
 .plbutton {
@@ -114,6 +115,10 @@
 @media (max-width: 600px) {
 
 .programsLocations {
+    width: 100%;
+}
+
+.plbutton {
     width: 100%;
 }
 

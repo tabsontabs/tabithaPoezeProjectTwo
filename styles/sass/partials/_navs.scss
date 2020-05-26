@@ -26,6 +26,14 @@ nav {
             color: $paragraphColor;
             font-family: $secondaryFont;
             @include font(20px, 29px, 1px)
+
+            &:hover {
+                color: $primaryTitleColor;
+            }
+
+            &:active {
+                color: $primaryTitleColor;
+            }
         }
 }
 
