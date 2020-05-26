@@ -59,9 +59,9 @@ header h2 {
     background-image: url("../assets/contact-image-1.jpg");
 }
 
-// media queries home page
 
 @media (max-width: 1050px) {
+    // home page
     .blackWhite {
         display: none;
     }
@@ -72,6 +72,21 @@ header h2 {
         text-align: center;
         padding-top: 20%;
     }
+
+// blog and contact pages
+header h2 {
+    position: initial;
+    top: 0;
+    text-align: center;
+}
+
+.blogHeader h2 {
+    margin-top: 10%;
+}
+
+.contactHeader h2 {
+    margin-top: 30%;
+}
 }
 
 @media (max-width: 700px) {
@@ -82,6 +97,12 @@ header {
 
 .main {
     padding-top: 10%;
+}
+
+// contact page
+.contactHeader h2 {
+    font-size: 4rem;
+    margin-top: 15%;
 }
 }
 
@@ -98,6 +119,14 @@ h1 {
 header p {
     font-size: 25px;
 }
+
+.blogHeader {
+    height: 60vh;
+
+        h2 {
+            position: initial;
+        }
+}
 }
 
 @media (max-width: 450px) {
@@ -111,30 +140,4 @@ header p {
 }
 }
 
-// media queries contact page
 
-@media (max-width: 1050px) {
-
-header h2 {
-    position: initial;
-    top: 0;
-    margin-top: 30%;
-    text-align: center;
-}
-
-.contactHeader h2 {
-    position: initial;
-    top: 0;
-    margin-top: 30%;
-    text-align: center;
-}
-}
-
-@media (max-width: 700px) {
-
-.contactHeader h2 {
-    font-size: 4rem;
-    margin-top: 15%;
-}
-
-}

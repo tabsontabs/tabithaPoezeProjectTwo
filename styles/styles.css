@@ -777,6 +777,17 @@ header h2 {
     text-align: center;
     padding-top: 20%;
   }
+  header h2 {
+    position: initial;
+    top: 0;
+    text-align: center;
+  }
+  .blogHeader h2 {
+    margin-top: 10%;
+  }
+  .contactHeader h2 {
+    margin-top: 30%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -785,6 +796,10 @@ header h2 {
   }
   .main {
     padding-top: 10%;
+  }
+  .contactHeader h2 {
+    font-size: 4rem;
+    margin-top: 15%;
   }
 }
 
@@ -798,6 +813,12 @@ header h2 {
   header p {
     font-size: 25px;
   }
+  .blogHeader {
+    height: 60vh;
+  }
+  .blogHeader h2 {
+    position: initial;
+  }
 }
 
 @media (max-width: 450px) {
@@ -806,28 +827,6 @@ header h2 {
   }
   header p {
     font-size: 20px;
-  }
-}
-
-@media (max-width: 1050px) {
-  header h2 {
-    position: initial;
-    top: 0;
-    margin-top: 30%;
-    text-align: center;
-  }
-  .contactHeader h2 {
-    position: initial;
-    top: 0;
-    margin-top: 30%;
-    text-align: center;
-  }
-}
-
-@media (max-width: 700px) {
-  .contactHeader h2 {
-    font-size: 4rem;
-    margin-top: 15%;
   }
 }
 
@@ -972,7 +971,22 @@ input[type=textarea] {
     display: block;
   }
   .blogComponentsLeft {
-    width: 70%;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .blogText {
+    padding-left: 10%;
+    padding-right: 10%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-bottom: 5px solid #555F02;
+  }
+  .blogText h4 {
+    padding-top: 0;
+    margin-top: 10%;
+  }
+  .comments, .blogForm {
+    margin-left: 0%;
   }
   aside {
     display: -webkit-box;
@@ -986,10 +1000,48 @@ input[type=textarea] {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: initial;
+    padding-bottom: 5%;
   }
-  .rightText {
+  aside .rightText {
     -webkit-box-shadow: none;
             box-shadow: none;
+    padding-left: 10%;
+    width: 100%;
+  }
+  aside .rightText ul {
+    padding-left: 10%;
+  }
+  aside .rocks {
+    width: 50vw;
+    height: auto;
+    -webkit-box-shadow: 20px -20px #555F02;
+            box-shadow: 20px -20px #555F02;
+  }
+  .commentsText {
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  aside {
+    display: block;
+  }
+  aside .rocks {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  aside .rightText {
+    padding-top: 5%;
+    width: 80%;
+    padding-bottom: 10%;
+  }
+  .blogComponentsLeft {
+    bottom: 100px;
+  }
+  .blogText h4 {
+    line-height: 35px;
+    padding-top: 5%;
   }
 }
 

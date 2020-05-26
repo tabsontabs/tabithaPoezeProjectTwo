@@ -132,12 +132,30 @@ input[type=textarea] {
 
 
 @media (max-width: 1050px) {
+
     .blogComponentsFlex {
         display: block;
     }
 
     .blogComponentsLeft {
-        width: 70%;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .blogText {
+        padding-left: 10%;
+        padding-right: 10%;
+        box-shadow: none;
+        border-bottom: 5px solid $buttonColor;
+    }
+
+    .blogText h4 {
+        padding-top: 0;
+        margin-top: 10%;
+    }
+
+    .comments, .blogForm {
+        margin-left: 0%;
     }
 
     aside {
@@ -149,9 +167,54 @@ input[type=textarea] {
         height: 100%;
         box-shadow: none;
         background-color: initial;
+        padding-bottom: 5%;
+
+            .rightText {
+                box-shadow: none;
+                padding-left: 10%;
+                width: 100%;
+
+                    ul {
+                        padding-left: 10%;
+                    }
+            }
+            .rocks {
+                width: 50vw;
+                height: auto;
+                box-shadow: 20px -20px $buttonColor;
+            }
+            
     }
 
-    .rightText {
-    box-shadow: none;
+    .commentsText {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    aside {
+        display: block;
+
+            .rocks {
+                display: block;
+                margin: 0 auto;
+                width: 80%;
+            }
+
+            .rightText {
+                padding-top: 5%;
+                width: 80%;
+                padding-bottom: 10%;
+            }
+    }
+
+    .blogComponentsLeft {
+        bottom: 100px;
+    }
+
+    .blogText h4 {
+        line-height: 35px;
+        padding-top: 5%;
     }
 }
